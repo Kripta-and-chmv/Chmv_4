@@ -14,14 +14,25 @@ namespace WebApplication1
 
         }
 
-        protected void BulletedList1_Click(object sender, BulletedListEventArgs e)
+        protected void btnSave_Click(object sender, EventArgs e)
         {
-
+            if (!Page.IsValid)
+                return;
+            lblOut.Text = txtFirstName.Text + " " + txtLastName.Text + " " + txtEmail.Text; 
         }
 
-        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        protected void CustomValidator1_ServerValidate(object source, ServerValidateEventArgs args)
         {
-
+            Random r = new Random();
+            int randNum = r.Next(1, 100);
+            if (randNum > 41)
+            {
+                args.IsValid = true;
+            }
+            else
+            {
+                args.IsValid = false;
+            }
         }
     }
 }

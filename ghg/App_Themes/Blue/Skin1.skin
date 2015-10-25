@@ -1,0 +1,11 @@
+﻿<asp:Button runat="server" 
+Backcolor="Aqua" 
+Font-Bold="true" 
+BorderStyle="Inset"
+SkinID="Skin1"/>
+
+<asp:Button runat="server" 
+Backcolor="Yellow" 
+Font-Bold="false" 
+BorderStyle="Inset"
+SkinID="Skin2"/>

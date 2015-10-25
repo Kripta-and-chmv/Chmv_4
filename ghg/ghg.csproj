@@ -66,7 +66,16 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Themes\Blue\StyleSheet1.css" />
+    <Content Include="App_Themes\Blue\StyleSheet2.css" />
+    <Content Include="App_Themes\Red\StyleSheet1.css" />
+    <Content Include="control_test.aspx" />
+    <Content Include="Master1.aspx" />
     <Content Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <Content Include="App_Themes\Blue\Skin1.skin" />
+    <Content Include="App_Themes\Red\Skin1.skin" />
+    <Content Include="Year.ascx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -88,7 +97,29 @@
     <Compile Include="controls.aspx.designer.cs">
       <DependentUpon>controls.aspx</DependentUpon>
     </Compile>
+    <Compile Include="control_test.aspx.cs">
+      <DependentUpon>control_test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="control_test.aspx.designer.cs">
+      <DependentUpon>control_test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master1.aspx.cs">
+      <DependentUpon>Master1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master1.aspx.designer.cs">
+      <DependentUpon>Master1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyTableControl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
     <Compile Include="view.aspx.cs">
       <DependentUpon>view.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -103,7 +134,15 @@
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Year.ascx.cs">
+      <DependentUpon>Year.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Year.ascx.designer.cs">
+      <DependentUpon>Year.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

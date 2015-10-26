@@ -1,4 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" UnobtrusiveValidationMode="None" CodeBehind="default.aspx.cs" Inherits="chmv4._default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" UnobtrusiveValidationMode="None" CodeBehind="default.aspx.cs" 
+     Inherits="chmv4._default" %>
+
 
 <%@ Register Src="~/red.ascx" TagPrefix="My" TagName="Editor" %>
 <!DOCTYPE html>
@@ -124,10 +126,10 @@
         }
     </style>
 </head>
-<body>
+<body background="Images/tumblr_static_grey_tumblr_background__2_.jpg">
 
     <form id="form1" runat="server">
-        <asp:Button ID="btnEnterance" runat="server" OnClick="btnEnterance_Click" Text="Вход" ValidationGroup="VG2" />
+        <asp:Button ID="btnEnterance" runat="server" OnClick="btnEnterance_Click" Text="Вход" />
                         <asp:MultiView ID="MultiView1" runat="server" OnActiveViewChanged="MultiView1_ActiveViewChanged" ActiveViewIndex="0" OnInit="MultiView1_Init">
                             <asp:View ID="view1" runat="server">
                                <My:Editor runat="server" ID="invisible" Visible="True" />
@@ -143,7 +145,7 @@
                                             <asp:TextBox ID="txtName" runat="server" OnTextChanged="name_TextChanged" Width="141px"></asp:TextBox>
                                         </td>
                                         <td class="auto-style4">
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtName" ErrorMessage="Введите название товара" ForeColor="#FF0066" ValidationGroup="VG1">*</asp:RequiredFieldValidator>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtName" ErrorMessage="Введите название товара" ForeColor="#CC0000" ValidationGroup="VG1">*</asp:RequiredFieldValidator>
                                         </td>
                                         <td class="auto-style3"></td>
                                         <td class="auto-style2">
@@ -183,15 +185,15 @@
                                             <asp:TextBox ID="txtFrom" runat="server" Width="60px">От</asp:TextBox>
                                         </td>
                                         <td class="auto-style33">
-                                            <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="txtFrom" Display="Dynamic" ErrorMessage="Нижняя граница ценового диапазона задана неверно" ForeColor="#FF0066" MaximumValue="99999999" MinimumValue="0" ValidationGroup="VG1">*</asp:RangeValidator>
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtFrom" Display="Dynamic" ErrorMessage="Введите нижнюю границу для поиска" ForeColor="#FF0066" ValidationGroup="VG1">*</asp:RequiredFieldValidator>
+                                            <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="txtFrom" Display="Dynamic" ErrorMessage="Нижняя граница ценового диапазона задана неверно" ForeColor="#CC0000" MaximumValue="99999999" MinimumValue="0" ValidationGroup="VG1">*</asp:RangeValidator>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtFrom" Display="Dynamic" ErrorMessage="Введите нижнюю границу для поиска" ForeColor="#CC0000" ValidationGroup="VG1">*</asp:RequiredFieldValidator>
                                         </td>
                                         <td class="auto-style34">
                                             <asp:TextBox ID="txtTo" runat="server" Width="60px">До</asp:TextBox>
                                         </td>
                                         <td class="auto-style35">
-                                            <asp:RangeValidator ID="RangeValidator2" runat="server" ControlToValidate="txtTo" Display="Dynamic" ErrorMessage="Нижняя граница ценового диапазона задана неверно" ForeColor="#FF0066" MaximumValue="99999999" MinimumValue="0" ValidationGroup="VG1">*</asp:RangeValidator>
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtTo" Display="Dynamic" ErrorMessage="Введите верхнюю границу для поиска" ForeColor="#FF0066" ValidationGroup="VG1">*</asp:RequiredFieldValidator>
+                                            <asp:RangeValidator ID="RangeValidator2" runat="server" ControlToValidate="txtTo" Display="Dynamic" ErrorMessage="Нижняя граница ценового диапазона задана неверно" ForeColor="#CC0000" MaximumValue="99999999" MinimumValue="0" ValidationGroup="VG1">*</asp:RangeValidator>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtTo" Display="Dynamic" ErrorMessage="Введите верхнюю границу для поиска" ForeColor="#CC0000" ValidationGroup="VG1">*</asp:RequiredFieldValidator>
                                         </td>
                                     </tr>
                                 </table>
@@ -206,13 +208,13 @@
             <table border="1" class="auto-style28">
                 <tr>
                     <td class="auto-style14">
-                        <p>Категория</p>
+                        <p><b>Категория</b></p>
                     </td>
                     <td>
-                        <p>Название</p>
+                        <p><b>Название</b></p>
                     </td>
                     <td>
-                        <p>Цена</p>
+                        <p><b>Цена</b></p>
                     </td>
 
                 </tr>

@@ -9,7 +9,7 @@
             <asp:TextBox ID="txtCategoryName" runat="server"></asp:TextBox>
         </td>
         <td>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtCategoryName" Display="Dynamic" ErrorMessage="Введите категорию" ForeColor="#FF0066" ValidationGroup="VG2">Введите категорию</asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtCategoryName" Display="Dynamic" ErrorMessage="Введите категорию" ForeColor="#CC0000" ValidationGroup="VG2">Введите категорию</asp:RequiredFieldValidator>
         </td>
     </tr>
     <tr>
@@ -27,7 +27,7 @@
             <asp:TextBox ID="txtProductName" runat="server"></asp:TextBox>
         </td>
         <td>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtProductName" Display="Dynamic" ErrorMessage="Введите название товара" ForeColor="#FF0066" ValidationGroup="VG1">*</asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtProductName" Display="Dynamic" ErrorMessage="Введите название товара" ForeColor="#CC0000" ValidationGroup="VG1">*</asp:RequiredFieldValidator>
         </td>
     </tr>
     <tr>
@@ -35,7 +35,7 @@
             <asp:TextBox ID="txtProductPrice" runat="server"></asp:TextBox>
         </td>
         <td>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtProductPrice" Display="Dynamic" ErrorMessage="Введите цену товара" ForeColor="#FF0066" ValidationGroup="VG1">*</asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtProductPrice" Display="Dynamic" ErrorMessage="Введите цену товара" ForeColor="#CC0000" ValidationGroup="VG1">*</asp:RequiredFieldValidator>
         </td>
     </tr>
     <tr>

@@ -26,14 +26,14 @@ namespace chmv4
                 ltRegText.Text = "Уже зарегистрированы?";
                 btnChangeTable.Text = "Войти";
                 MultiView1.ActiveViewIndex = 0;
-                btnEnterReg.Text = "Вход";
+                btnEnterReg.Text = "Регистрация";
             }
             else
             {
                 ltRegText.Text = "Ещё не зарегистрированы?";
                 btnChangeTable.Text = "Зарегистрироваться";
                 MultiView1.ActiveViewIndex = 1;
-                btnEnterReg.Text = "Регистрация";
+                btnEnterReg.Text = "Вход";
             }
 
         }

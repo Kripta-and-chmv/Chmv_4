@@ -35,17 +35,7 @@ namespace chmv4
         }
 
 
-        protected void CustomValidator1_ServerValidate1(object source, ServerValidateEventArgs args)
-        {
-            int from = Convert.ToInt32(txtFrom.Text), to = Convert.ToInt32(txtTo.Text);
-            if (from > to)
-            {
-                args.IsValid = false;
-                return;
-            }
-            args.IsValid = true;
-            return;
-        }
+       
 
         protected void ddlFindCategory_SelectedIndexChanged(object sender, EventArgs e)
         {

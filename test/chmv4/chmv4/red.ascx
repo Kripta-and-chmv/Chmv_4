@@ -9,12 +9,12 @@
             <asp:TextBox ID="txtCategoryName" runat="server"></asp:TextBox>
         </td>
         <td>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtCategoryName" Display="Dynamic" ErrorMessage="Введите категорию" ForeColor="#FF0066">*</asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtCategoryName" Display="Dynamic" ErrorMessage="Введите категорию" ForeColor="#FF0066" ValidationGroup="VG2">Введите категорию</asp:RequiredFieldValidator>
         </td>
     </tr>
     <tr>
         <td align="center">
-            <asp:Button ID="btnAddcategory" runat="server" Text="Добавить" OnClick="btnAddcategory_Click" /></td>
+            <asp:Button ID="btnAddcategory" runat="server" Text="Добавить" OnClick="btnAddcategory_Click" ValidationGroup="VG2" /></td>
     </tr>
     <tr>
         <td></td>
@@ -27,7 +27,7 @@
             <asp:TextBox ID="txtProductName" runat="server"></asp:TextBox>
         </td>
         <td>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtProductName" Display="Dynamic" ErrorMessage="Введите название товара" ForeColor="#FF0066">*</asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtProductName" Display="Dynamic" ErrorMessage="Введите название товара" ForeColor="#FF0066" ValidationGroup="VG1">*</asp:RequiredFieldValidator>
         </td>
     </tr>
     <tr>
@@ -35,7 +35,7 @@
             <asp:TextBox ID="txtProductPrice" runat="server"></asp:TextBox>
         </td>
         <td>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtProductPrice" Display="Dynamic" ErrorMessage="Введите цену товара" ForeColor="#FF0066">*</asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtProductPrice" Display="Dynamic" ErrorMessage="Введите цену товара" ForeColor="#FF0066" ValidationGroup="VG1">*</asp:RequiredFieldValidator>
         </td>
     </tr>
     <tr>
@@ -48,6 +48,6 @@
     </tr>
     <tr>
         <td align="center">
-            <asp:Button ID="btnAddProduct" runat="server" Text="Добавить" OnClick="btnAddProduct_Click" /></td>
+            <asp:Button ID="btnAddProduct" runat="server" Text="Добавить" OnClick="btnAddProduct_Click" ValidationGroup="VG1" /></td>
     </tr>
 </table>

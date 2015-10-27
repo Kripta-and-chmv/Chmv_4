@@ -37,7 +37,7 @@
         }
 
         .auto-style13 {
-            width: 814px;
+            width: 613px;
         }
 
         .auto-style14 {
@@ -129,7 +129,14 @@
 <body background="Images/tumblr_static_grey_tumblr_background__2_.jpg">
 
     <form id="form1" runat="server">
-        <asp:Button ID="btnEnterance" runat="server" OnClick="btnEnterance_Click" Text="Вход" />
+        <table>
+       <tr> <td width="150"><asp:Button ID="btnEnterance" runat="server" OnClick="btnEnterance_Click" Text="Вход" /></td>
+                       <td> <asp:Button ID="btnToManagement" runat="server" Text="Управление персоналом" OnClick="Button2_Click" /></td>
+           </tr>
+            </table>
+                        <br />
+        <br />
+        <br />
                         <asp:MultiView ID="MultiView1" runat="server" OnActiveViewChanged="MultiView1_ActiveViewChanged" ActiveViewIndex="0" OnInit="MultiView1_Init">
                             <asp:View ID="view1" runat="server">
                                <My:Editor runat="server" ID="invisible" Visible="True" />
@@ -139,7 +146,7 @@
                                     <tr>
                                         <td class="auto-style24">
                                             <p>
-                                                Название товара</p>
+                                                <strong>Название товара</strong></p>
                                         </td>
                                         <td class="auto-style27">
                                             <asp:TextBox ID="txtName" runat="server" OnTextChanged="name_TextChanged" Width="141px"></asp:TextBox>
@@ -150,7 +157,7 @@
                                         <td class="auto-style3"></td>
                                         <td class="auto-style2">
                                             <p>
-                                                Категория</p>
+                                                <strong>Категория</strong></p>
                                         </td>
                                         <td class="auto-style19">
                                             <asp:DropDownList ID="ddlFindCategory" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlFindCategory_SelectedIndexChanged">
@@ -162,16 +169,16 @@
                                         <td class="auto-style18"></td>
                                         <td class="auto-style23">
                                             &nbsp;</td>
-                                        <td rowspan="8" width="160">&nbsp;</td>
+                                        
                                     </tr>
                                     <tr>
                                         <td class="auto-style21"></td>
                                         <td class="auto-style26"></td>
                                         <td class="auto-style8"></td>
                                         <td class="auto-style9"></td>
-                                        <td class="auto-style7" colspan="5">
+                                        <td class="auto-style7" colspan="4">
                                             <p align="left">
-                                                Ценовой диапазон</p>
+                                                <strong>Ценовой диапазон</strong></p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -235,8 +242,17 @@
                 </tr>
             </table>
         </div>
-        <div id="editor">
-        </div>
+       
+
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" PageSize="25">
+             <Columns>
+                <asp:BoundField HeaderText="Категория"/>
+                <asp:BoundField HeaderText="Товар" />
+                <asp:BoundField HeaderText="Стоимость" />
+                
+            </Columns>
+        </asp:GridView>
+       
 
     </form>
 </body>

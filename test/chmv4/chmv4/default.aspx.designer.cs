@@ -31,6 +31,15 @@ namespace chmv4 {
         protected global::System.Web.UI.WebControls.Button btnEnterance;
         
         /// <summary>
+        /// btnToManagement элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnToManagement;
+        
+        /// <summary>
         /// MultiView1 элемент управления.
         /// </summary>
         /// <remarks>
@@ -173,5 +182,14 @@ namespace chmv4 {
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox CheckBox1;
+        
+        /// <summary>
+        /// GridView1 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }

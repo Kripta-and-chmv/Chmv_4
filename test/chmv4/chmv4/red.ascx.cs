@@ -29,6 +29,21 @@ namespace chmv4
             {
                 return;
             }
+            Label1.Text = "Товар " + txtProductName.Text + " успешно добавлен в категорию " + ddlCategories.SelectedValue;
+        }
+
+        protected void CustomValidator1_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            Random rand = new Random();
+            int k = rand.Next(1, 100);
+            if (k >= 80)
+            {
+                args.IsValid = false;
+            }
+            else
+            {
+                args.IsValid = true;
+            }
         }
     }
 }

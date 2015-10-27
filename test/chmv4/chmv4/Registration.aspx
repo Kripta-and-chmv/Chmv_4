@@ -19,6 +19,9 @@
     <form id="form1" runat="server">
         <div>
             <asp:Button ID="btnBack" runat="server" OnClick="btnBack_Click" Text="Назад" ValidationGroup="VG2"/>
+            <br />
+            <br />
+            <br />
             <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="#CC0000" ShowMessageBox="True" ShowSummary="False" ValidationGroup="VG1" />
             <table>
                 <tr>

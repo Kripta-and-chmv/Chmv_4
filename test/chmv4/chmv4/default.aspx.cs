@@ -86,5 +86,10 @@ namespace chmv4
         {
             Server.Transfer("PersonalManagement.aspx", true);
         }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

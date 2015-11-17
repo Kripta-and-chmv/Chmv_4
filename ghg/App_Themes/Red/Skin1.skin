@@ -1,4 +1,0 @@
-﻿<asp:Button runat="server" 
-Backcolor="White" 
-Font-Bold="false" 
-BorderStyle="Inset"/>

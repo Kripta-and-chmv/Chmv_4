@@ -35,6 +35,6 @@ C:\Users\gener\Documents\GitHub\Chmv_4\test\chmv4\chmv4\bin\chmv4.dll
 C:\Users\gener\Documents\GitHub\Chmv_4\test\chmv4\chmv4\bin\chmv4.pdb
 C:\Users\gener\Documents\GitHub\Chmv_4\test\chmv4\chmv4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\gener\Documents\GitHub\Chmv_4\test\chmv4\chmv4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\gener\Documents\GitHub\Chmv_4\test\chmv4\chmv4\obj\Debug\chmv4.csprojResolveAssemblyReference.cache
 C:\Users\gener\Documents\GitHub\Chmv_4\test\chmv4\chmv4\obj\Debug\chmv4.dll
 C:\Users\gener\Documents\GitHub\Chmv_4\test\chmv4\chmv4\obj\Debug\chmv4.pdb
+C:\Users\gener\Documents\GitHub\Chmv_4\test\chmv4\chmv4\obj\Debug\chmv4.csprojResolveAssemblyReference.cache

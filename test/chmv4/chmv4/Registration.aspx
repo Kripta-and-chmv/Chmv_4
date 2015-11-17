@@ -13,6 +13,9 @@
         .auto-style2 {
             height: 23px;
         }
+        .auto-style3 {
+            height: 25px;
+        }
     </style>
 </head>
 <body background="Images/tumblr_static_grey_tumblr_background__2_.jpg">
@@ -28,13 +31,13 @@
                     <td>Логин:</td>
                 </tr>
                 <tr>
-                    <td width="150">
+                    <td width="150" class="auto-style3">
                         <asp:TextBox ID="txtLogin" runat="server"></asp:TextBox>
                     </td>
-                    <td>
+                    <td class="auto-style3">
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtLogin" Display="Dynamic" ErrorMessage="Введите логин" ForeColor="#CC0000" ValidationGroup="VG1">*</asp:RequiredFieldValidator>
                     </td>
-                    <td>
+                    <td class="auto-style3">
                         <asp:Literal ID="ltRegText" runat="server" Text="Ещё не зарегистрированы?"></asp:Literal>
                     </td>
                 </tr>
@@ -98,6 +101,8 @@
             </asp:MultiView>
 
         </div>
+        <div>
+            <asp:Label ID="Label1" runat="server" ForeColor="#CC0000"></asp:Label> </div>
         <div><p align="center" class="auto-style1"><asp:Button ID="btnEnterReg" runat="server" Text="Вход" OnClick="btnEnterReg_Click" ValidationGroup="VG1" /></p></div>
     </form>
 </body>

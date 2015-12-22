@@ -50,7 +50,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">
-                        <asp:TextBox ID="txtPass" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtPass" runat="server" TextMode="Password"></asp:TextBox>
                     <td class="auto-style2">
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Введите пароль" ForeColor="#CC0000" ControlToValidate="txtPass" ValidationGroup="VG1">*</asp:RequiredFieldValidator>
                     </td>
@@ -70,7 +70,7 @@
                         </tr>
                         <tr>
                         <td>
-                            <asp:TextBox ID="txtRepeatPas" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtRepeatPas" runat="server" TextMode="Password"></asp:TextBox>
                         </td>
                             <td>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" Display="Dynamic" ErrorMessage="Повторите пароль" ForeColor="#CC0000" ControlToValidate="txtRepeatPas" ValidationGroup="VG1">*</asp:RequiredFieldValidator>

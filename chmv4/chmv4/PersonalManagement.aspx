@@ -61,10 +61,11 @@
                     <br />
                     <br />
                     <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Изменить категорию на" Width="181px" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<br />
                     <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="Rights" DataTextField="Rights" DataValueField="Rights" AutoPostBack="True">
                     </asp:DropDownList>
                     <asp:SqlDataSource ID="Rights" runat="server" ConnectionString="<%$ ConnectionStrings:KKK %>" SelectCommand="SELECT [Rights] FROM [Rights]"></asp:SqlDataSource>
+                    <br />
                     <asp:Label ID="Label2" runat="server" ForeColor="#CC0000"></asp:Label>
                 </td>
             </tr>
